@@ -1,0 +1,13 @@
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\bin\Debug\RussianCosmetics.exe.config
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\bin\Debug\RussianCosmetics.exe
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\bin\Debug\RussianCosmetics.pdb
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.csproj.AssemblyReference.cache
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.Form1.resources
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.Properties.Resources.resources
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.csproj.GenerateResource.cache
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.csproj.CoreCompileInputs.cache
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.exe
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.pdb
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.AddUslugaForm.resources
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.AddClientForm.resources
