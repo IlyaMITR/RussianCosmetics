@@ -11,3 +11,4 @@ C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\Russi
 C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.pdb
 C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.AddUslugaForm.resources
 C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.AddClientForm.resources
+C:\Users\Mitrik07\source\repos\RussianCosmetics\RussianCosmetics\obj\Debug\RussianCosmetics.AddOrderForm.resources

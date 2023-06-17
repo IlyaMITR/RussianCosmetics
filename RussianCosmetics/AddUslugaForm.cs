@@ -13,10 +13,13 @@ namespace RussianCosmetics
     public partial class AddUslugaForm : Form
     {
         DataGridView uslugiTable;
-        public AddUslugaForm(DataGridView table)
+        List<Usluga> uslugi;
+        Validation validation = new Validation();
+        public AddUslugaForm(DataGridView table, List<Usluga> uslugiList)
         {
             InitializeComponent();
             uslugiTable = table;
+            uslugi = uslugiList;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -28,16 +31,11 @@ namespace RussianCosmetics
         {
             try 
             {
-                string name = UslugaNameText.Text;
-                if (name == string.Empty)
-                {
-                    UslugaNameText.BackColor = Color.LightCoral;
-                    throw new Exception("Напишите название услуги!");
-                }
+                string name = validation.Do(UslugaNameText, UslugaNameLabel);
                 string price = UslugaPriceNumericUpDown.Value.ToString();
+                uslugi.Add(new Usluga(name, price));
                 uslugiTable.Rows.Add(name, price);
                 Close();
-
             }
             catch (Exception ex) 
             {
@@ -45,4 +43,16 @@ namespace RussianCosmetics
             }
         }
     }
+
+    public class Usluga 
+    {
+        public string name;
+        public string price;
+        public Usluga(string name, string price)
+        {
+            this.name = name;
+            this.price = price;
+        }
+    }
+
 }
