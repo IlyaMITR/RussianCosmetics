@@ -91,7 +91,7 @@ namespace RussianCosmetics
                     this.price += (int)price;
                 }
             }
-            date = new DateTime().ToString();
+            date = DateTime.Now.ToString();
         }
     }
 
