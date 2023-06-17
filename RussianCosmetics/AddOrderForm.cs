@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace RussianCosmetics
 {
@@ -41,7 +42,7 @@ namespace RussianCosmetics
                 List<Usluga> matchingUslugi = uslugi.Where(p => uslugiNames.Contains(p.name)).ToList();
                 Order order = new Order(client, matchingUslugi);
                 orders.Add(order);
-                table.Rows.Add(order.num, order.uslugi, order.client, order.price, order.date);
+                table.Rows.Add(order.num, order.uslugi, order.client, order.price.ToString(), order.date);
                 Close();
             }
             catch (Exception ex)
@@ -73,21 +74,21 @@ namespace RussianCosmetics
     public class Order
     {
         public string num;
-        public List<Usluga> uslugi;
+        public string uslugi;
         public string client;
-        public string price;
+        public int price;
         public string date;
         public Order(string client, List<Usluga> uslugi) 
         {
             num = new DateTime().Ticks.ToString();
             this.client = client;
-            this.uslugi = uslugi;
+            this.uslugi = string.Join(",", uslugi.Select(u => u.name));
             foreach (Usluga usluga in uslugi)
             {
                 decimal price;
                 if (decimal.TryParse(usluga.price, out price))
                 {
-                    this.price += price;
+                    this.price += (int)price;
                 }
             }
             date = new DateTime().ToString();
